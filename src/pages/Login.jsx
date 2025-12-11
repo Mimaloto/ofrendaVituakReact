@@ -5,6 +5,7 @@ import { useUserStore } from '../store/userStore'
 import { useNavigate } from 'react-router-dom'
 import { isEmail } from '../utils/validators'
 
+
 export default function Login(){
   const setUser = useUserStore(state => state.setUser)
   const [form, setForm] = useState({ correo:'', contrasena:'' })
